@@ -1,0 +1,76 @@
+/* Reset & Base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b162a; /* Bears Navy */
+    color: #ffffff;
+}
+
+a {
+    color: #ffb81c; /* Bears Orange */
+    text-decoration: none;
+}
+
+header {
+    background-color: #0b162a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #ffb81c;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffb81c;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #081c2f;
+    border-bottom: 2px solid #ffb81c;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #081c2f;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ffb81c;
+}
+
+th {
+    background-color: #ffb81c;
+    color: #0b162a;
+}
+
+tr:nth-child(even) {
+    background-color: #0d223e;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #081c2f;
+    border-top: 2px solid #ffb81c;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
