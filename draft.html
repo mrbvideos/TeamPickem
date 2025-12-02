@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draft Board - Team Pick'em</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Draft Board</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="standings.html">Standings</a>
+        <a href="draft.html">Draft Board</a>
+        <a href="records.html">Team Records</a>
+    </nav>
+    <main>
+        <div id="draftContainer">Loading draft board...</div>
+    </main>
+    <footer>
+        &copy; 2025 Team Pick'em League
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        (async () => {
+            const rows = await fetchSheetData('Draft'); // Name of Sheet 1
+            const headers = rows.shift();
+            createTable(headers, rows, 'draftContainer');
+        })();
+    </script>
+</body>
+</html>
